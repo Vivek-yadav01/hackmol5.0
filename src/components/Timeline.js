@@ -92,7 +92,18 @@ function Timeline() {
                   </div>
                 </div>
               </div>
-
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                  <div>4:00 PM</div>
+                </div>
+              </div>
               <div className="card">
                 <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
                   <div>Hackathon registration starts</div>
@@ -104,55 +115,86 @@ function Timeline() {
                   </div>
                 </div>
               </div>
-
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                </div>
+              </div>
               <div className="mx-auto">1/2</div>
             </div>
 
-            <div
-              className={`${style2.container}  ${style2.borderright}  ${style2.widthbook} ${style2.containertext}`}
-            >
-              <div className="flex justify-between">
-                <div className={`${style2.daytext}`}>DAY2</div>{" "}
-                <div className="text-black-200">XX FEB-2024</div>
-              </div>
-              <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
-                <div>Hackathon registration starts</div>{" "}
-                <div className="flex">
-                  <div className="pt-[4px] mr-[4px]">
-                    <img src={clock.src} alt="" />
-                  </div>
-                  <div>10:00 AM</div>
-                </div>
-              </div>
-
-              <div className="card">
-                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
-                  <div>Hackathon registration starts</div>
-                  <div className="flex">
-                    <div className="pt-[4px] mr-[4px]">
-                      <img src={clock.src} alt="" />
-                    </div>
-                    <div>10:00 AM</div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
-                  <div>Hackathon registration starts</div>
-                  <div className="flex">
-                    <div className="pt-[4px] mr-[4px]">
-                      <img src={clock.src} alt="" />
-                    </div>
-                    <div>10:00 AM</div>
-                  </div>
-                </div>
-              </div>
-              <div className="mx-auto">2/2</div>
+          <div
+            className={`${style2.container}  ${style2.borderright}  ${style2.widthbook} ${style2.containertext}`}
+          >
+            <div className="flex justify-between">
+              <div className={`${style2.daytext}`}>DAY2</div>{" "}
+              <div className="text-black-200">25 FEB-2024</div>
             </div>
+            <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+              <div>Mid Night Evaluation</div>{" "}
+              <div className="flex">
+                <div className="pt-[4px] mr-[4px]">
+                  <img src={clock.src} alt="" />
+                </div>
+                <div>1 : 00 AM</div>
+              </div>
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div className={` ${style2.borderbox}  ${style2.paddinginbox}`}>
+                  <div>Hackathon registration starts</div>
+                  <div className="flex">
+                    <div className="pt-[4px] mr-[4px]">
+                      <img src={clock.src} alt="" />
+                    </div>
+                    <div>10:00 AM</div>
+                  </div>
+                  <div>2:00 PM</div>
+                </div>
+              </div>
+            </div>
+            <div className="mx-auto">2/2</div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Timeline;

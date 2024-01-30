@@ -1,57 +1,57 @@
 import React from "react";
 import Card from "./Card";
-import judgeSampleImage from "../../../public/images/judges/Judge.svg";
+import judgeSampleImage1 from "../../../public/images/judges/anubhav.jpeg";
+import judgeSampleImage2 from "../../../public/images/judges/shikhar.jpg";
+import judgeSampleImage3 from "../../../public/images/judges/naaz1.jpeg";
 
 export default function CardHolder() {
   const judges = [
     {
       name: "ANUBHAV GUPTA",
-      imageURL: judgeSampleImage,
-      role: "SOFTWARE ENGINEER",
-      company: "Lorem epsum",
-      linkedinLink: "https://www.linkedin.com/in/arnav-anand-923232270/",
-      instaLink: "https://www.instagram.com/neo.anderson.7/",
-      twitterLink: "https://twitter.com/thisis_arnav",
+      imageURL: judgeSampleImage1,
+      role: "SWE",
+      company: "Writesonic",
+      linkedinLink: "https://www.linkedin.com/in/anubhav-gupta-6b87711b0/",
+      // instaLink: "#",
+      twitterLink: "https://twitter.com/GuptaAnubhav12?s=20",
     },
 
     {
-      name: "ANUBHAV GUPTA",
-      imageURL: judgeSampleImage,
+      name: "Shikhar Srivastava",
+      imageURL: judgeSampleImage2,
       role: "SOFTWARE ENGINEER",
-      company: "Lorem epsum",
-      linkedinLink: "https://www.linkedin.com/in/arnav-anand-923232270/",
-      instaLink: "https://www.instagram.com/neo.anderson.7/",
-      twitterLink: "https://twitter.com/thisis_arnav",
+      company: "Procol",
+      linkedinLink: "https://www.linkedin.com/in/shikhar236/",
+      instaLink: "#",
+      twitterLink: "#",
     },
 
     {
-      name: "ANUBHAV GUPTA",
-      imageURL: judgeSampleImage,
-      role: "SOFTWARE ENGINEER",
-      company: "Lorem epsum",
-      linkedinLink: "https://www.linkedin.com/in/arnav-anand-923232270/",
-      instaLink: "https://www.instagram.com/neo.anderson.7/",
-      twitterLink: "https://twitter.com/thisis_arnav",
+      name: "Naaz Kakria",
+      imageURL: judgeSampleImage3,
+      role: "SDE",
+      company: "ORACLE",
+      linkedinLink: "https://www.linkedin.com/in/naazk3/",
+      instaLink: "#",
+      twitterLink: "#",
     },
 
-    {
-      name: "ANUBHAV GUPTA",
-      imageURL: judgeSampleImage,
-      role: "SOFTWARE ENGINEER",
-      company: "Lorem epsum",
-      linkedinLink: "https://www.linkedin.com/in/arnav-anand-923232270/",
-      instaLink: "https://www.instagram.com/neo.anderson.7/",
-      twitterLink: "https://twitter.com/thisis_arnav",
-    },
+    // {
+    //   name: "ANUBHAV GUPTA",
+    //   imageURL: judgeSampleImage,
+    //   role: "SOFTWARE ENGINEER",
+    //   // company: "Lorem epsum",
+    //   linkedinLink: "#",
+    //   instaLink: "#",
+    //   twitterLink: "#",
+    // },
   ];
 
   return (
-    <>
-      <div className="inline-flex items-center gap-x-9">
-        {judges.map((judge,index) => (
-          <Card judge={judge} key={index}/>
-        ))}
-      </div>
-    </>
+    <div className="flex flex-wrap justify-center gap-9">
+      {judges.map((judge, index) => (
+        <Card judge={judge} key={index} />
+      ))}
+    </div>
   );
 }

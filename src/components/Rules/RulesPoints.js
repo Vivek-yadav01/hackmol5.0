@@ -1,12 +1,14 @@
-import React from "react";
+import Image from "next/image";
 
 function RulesPoint({ Desc, color, alignment, icon }) {
   const getAlign = () => {
     return alignment === "left" ? "flex-row-reverse" : "";
   };
 
+  let card_style = `bg-white w-full h-full p-2 border-5 flex justify-center font-bold text-center`
+
   return (
-    <div className={`flex ${getAlign()} items-center `}>
+    <div className={`flex ${getAlign()} items-center`}>
       <div
         className={`hidden sm:block z-30`}
         style={{
@@ -14,20 +16,18 @@ function RulesPoint({ Desc, color, alignment, icon }) {
           marginRight: alignment === "right" ? "-3rem" : "0",
         }}
       >
-        <img src={icon} alt="img" />
+        <Image src={icon} alt="img" className='w-full h-full' width={0} height={0} />
       </div>
       <div
-        className={`bg-white w-full h-full p-2 border-5 flex justify-center font-bold text-center`}
+        className={card_style}
         style={{
           borderColor: color,
           borderWidth: "0.25rem",
           borderStyle: "solid",
         }}
       >
-        <div className={`font-medium text-xl px-8 font-Space-Grotesk`}>
-          {Desc} Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Commodi sequi recusandae ullam molestias sed, vero enim neque esse,
-          aperiam hic.
+        <div className={`font-medium text-xl px-10 font-Space-Grotesk`}>
+          {Desc} 
         </div>
       </div>
     </div>
